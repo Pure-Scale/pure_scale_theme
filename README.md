@@ -1,4 +1,11 @@
 ## Example
+
+ - Add this to import section
+
+```
+import 'package:pure_scale_theme/pure_scale_theme.dart';
+```
+
  - How to use this on 'main.dart' file
 
 ```
