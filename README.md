@@ -2,6 +2,15 @@
 
 ## How to use
 
+### Install
+Put this on your `pubspec.yaml` file.
+
+```Dart
+  pure_scale_theme:
+    git:
+      url: https://github.com/Pure-Scale/pure_scale_theme
+```
+
 ### Import
 
 ```Dart
@@ -35,6 +44,4 @@ TAppTheme.lightTheme.copyWith(
         primary: Colors.red,
     ),
 );
-
-
 ```
