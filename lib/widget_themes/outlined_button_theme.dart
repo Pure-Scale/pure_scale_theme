@@ -4,16 +4,20 @@ part of '../pure_scale_theme.dart';
 class TOutlinedButtonTheme {
   TOutlinedButtonTheme._(); //To avoid creating instances
 
-
   /* -- Light Theme -- */
-  static final lightOutlinedButtonTheme  = OutlinedButtonThemeData(
+  static final lightOutlinedButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
-      elevation: 0,
       foregroundColor: TLightBrandColors.dark,
-      side: const BorderSide(color: TLightBrandColors.borderPrimary),
-      textStyle: const TextStyle(fontSize: 16, color: TLightBrandColors.black, fontWeight: FontWeight.w600),
-      padding: const EdgeInsets.symmetric(vertical: TSizes.buttonHeight, horizontal: 20),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(TSizes.buttonRadius)),
+      side: const BorderSide(
+        color: TLightBrandColors.borderPrimary,
+      ),
+      textStyle: const TextStyle(
+        fontSize: 16,
+        color: TLightBrandColors.black,
+      ),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(TSizes.buttonRadius),
+      ),
     ),
   );
 
@@ -22,9 +26,14 @@ class TOutlinedButtonTheme {
     style: OutlinedButton.styleFrom(
       foregroundColor: TDarkBrandColors.light,
       side: const BorderSide(color: TDarkBrandColors.borderPrimary),
-      textStyle: const TextStyle(fontSize: 16, color: TDarkBrandColors.textWhite, fontWeight: FontWeight.w600),
-      padding: const EdgeInsets.symmetric(vertical: TSizes.buttonHeight, horizontal: 20),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(TSizes.buttonRadius)),
+      textStyle: const TextStyle(
+          fontSize: 16,
+          color: TDarkBrandColors.textWhite,
+          fontWeight: FontWeight.w600),
+      padding: const EdgeInsets.symmetric(
+          vertical: TSizes.buttonHeight, horizontal: 20),
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(TSizes.buttonRadius)),
     ),
   );
 }

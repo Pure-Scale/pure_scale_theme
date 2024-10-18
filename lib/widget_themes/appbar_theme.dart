@@ -1,26 +1,40 @@
 part of '../pure_scale_theme.dart';
 
-class TAppBarTheme{
+class TAppBarTheme {
   TAppBarTheme._();
 
   static const lightAppBarTheme = AppBarTheme(
-    elevation: 0,
-    centerTitle: false,
-    scrolledUnderElevation: 0,
-    backgroundColor: TLightBrandColors.buttonPrimary,
+    elevation: 1,
+    centerTitle: true,
+    backgroundColor: TLightBrandColors.accent,
     surfaceTintColor: Colors.transparent,
-    iconTheme: IconThemeData(color: TLightBrandColors.icon, size: TSizes.iconMd),
-    actionsIconTheme: IconThemeData(color: TLightBrandColors.actionIcon, size: TSizes.iconMd),
-    titleTextStyle: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600, color: TLightBrandColors.primary),
+    iconTheme: IconThemeData(
+      color: TLightBrandColors.icon,
+      size: TSizes.iconMd,
+    ),
+    actionsIconTheme: IconThemeData(
+      color: TLightBrandColors.icon,
+      size: TSizes.iconMd,
+    ),
+    titleTextStyle: TextStyle(
+      fontSize: 18.0,
+      fontWeight: FontWeight.w600,
+      color: TLightBrandColors.textWhite,
+    ),
   );
+  
   static const darkAppBarTheme = AppBarTheme(
     elevation: 0,
     centerTitle: false,
     scrolledUnderElevation: 0,
-    backgroundColor: TDarkBrandColors.buttonPrimary,
+    backgroundColor: TDarkBrandColors.accent,
     surfaceTintColor: Colors.transparent,
     iconTheme: IconThemeData(color: TDarkBrandColors.icon, size: TSizes.iconMd),
-    actionsIconTheme: IconThemeData(color: TDarkBrandColors.actionIcon, size: TSizes.iconMd),
-    titleTextStyle: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600, color: TDarkBrandColors.textPrimary),
+    actionsIconTheme:
+        IconThemeData(color: TDarkBrandColors.actionIcon, size: TSizes.iconMd),
+    titleTextStyle: TextStyle(
+        fontSize: 18.0,
+        fontWeight: FontWeight.w600,
+        color: TDarkBrandColors.textPrimary),
   );
 }

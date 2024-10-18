@@ -28,9 +28,15 @@ class TAppTheme {
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
     fontFamily: 'Poppins',
+    colorScheme: ColorScheme.fromSeed(
+      seedColor: TLightBrandColors.primary,
+      brightness: Brightness.light,
+      secondary: TLightBrandColors.secondary,
+      error: TLightBrandColors.error,
+      onPrimary: TLightBrandColors.primary,
+      onSecondary: TLightBrandColors.secondary,
+    ),
     disabledColor: TLightBrandColors.grey,
-    brightness: Brightness.light,
-    primaryColor: TLightBrandColors.primary,
     textTheme: TTextTheme.lightTextTheme,
     chipTheme: TChipTheme.lightChipTheme,
     scaffoldBackgroundColor: TLightBrandColors.white,
