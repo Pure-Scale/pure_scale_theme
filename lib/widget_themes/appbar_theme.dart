@@ -6,8 +6,7 @@ class TAppBarTheme {
   static const lightAppBarTheme = AppBarTheme(
     elevation: 1,
     centerTitle: true,
-    backgroundColor: TLightBrandColors.accent,
-    surfaceTintColor: Colors.transparent,
+    backgroundColor: TLightBrandColors.primary,
     iconTheme: IconThemeData(
       color: TLightBrandColors.icon,
       size: TSizes.iconMd,
@@ -18,11 +17,10 @@ class TAppBarTheme {
     ),
     titleTextStyle: TextStyle(
       fontSize: 18.0,
-      fontWeight: FontWeight.w600,
       color: TLightBrandColors.textWhite,
     ),
   );
-  
+
   static const darkAppBarTheme = AppBarTheme(
     elevation: 0,
     centerTitle: false,

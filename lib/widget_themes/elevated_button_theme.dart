@@ -7,18 +7,16 @@ class TElevatedButtonTheme {
   /* -- Light Theme -- */
   static final lightElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
-      elevation: 0,
       foregroundColor: TLightBrandColors.light,
       backgroundColor: TLightBrandColors.primary,
       disabledForegroundColor: TLightBrandColors.darkGrey,
       disabledBackgroundColor: TLightBrandColors.buttonDisabled,
-      side: BorderSide(
-        color: TLightBrandColors.primary.withOpacity(0.5),
-      ),
       textStyle: const TextStyle(
         fontSize: 16,
         color: TLightBrandColors.textWhite,
       ),
+      minimumSize: const Size(64, 48),
+      maximumSize: const Size(double.infinity, 48),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(TSizes.buttonRadius),
       ),
@@ -28,7 +26,6 @@ class TElevatedButtonTheme {
   /* -- Dark Theme -- */
   static final darkElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
-      elevation: 0,
       foregroundColor: TDarkBrandColors.light,
       backgroundColor: TDarkBrandColors.primary,
       disabledForegroundColor: TDarkBrandColors.darkGrey,
@@ -36,11 +33,14 @@ class TElevatedButtonTheme {
       side: const BorderSide(color: TDarkBrandColors.primary),
       padding: const EdgeInsets.symmetric(vertical: TSizes.buttonHeight),
       textStyle: const TextStyle(
-          fontSize: 16,
-          color: TDarkBrandColors.textWhite,
-          fontWeight: FontWeight.w600),
+        fontSize: 16,
+        color: TDarkBrandColors.textWhite,
+      ),
+      minimumSize: const Size(64, 48),
+      maximumSize: const Size(double.infinity, 48),
       shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(TSizes.buttonRadius)),
+        borderRadius: BorderRadius.circular(TSizes.buttonRadius),
+      ),
     ),
   );
 }
