@@ -2,9 +2,9 @@ part of '../pure_scale_theme.dart';
 
 class TLightBrandColors {
 // App theme colors
-  static const Color primary = Color(0xFF4b68ff);
+  static const Color primary = Color(0xFF449DD1);
   static const Color secondary = Color(0xFFFFE24B);
-  static const Color accent = Color(0xFFb0c7ff);
+  static const Color accent = Color(0xFF78C0E0);
   static const Color accent2 = Color.fromARGB(255, 233, 236, 252);
 
   // Text colors
@@ -22,7 +22,7 @@ class TLightBrandColors {
   static Color darkContainer = TDarkBrandColors.white.withOpacity(0.1);
 
   // Button colors
-  static const Color buttonPrimary = Color(0xFF4b68ff);
+  static const Color buttonPrimary = Color(0xFF192BC2);
   static const Color buttonSecondary = Color(0xFF6C757D);
   static const Color buttonDisabled = Color(0xFFC4C4C4);
 
@@ -34,7 +34,7 @@ class TLightBrandColors {
   static const Color error = Color(0xFFD32F2F);
   static const Color success = Color(0xFF388E3C);
   static const Color warning = Color(0xFFF57C00);
-  static const Color info = Color(0xFF1976D2);
+  static const Color info = Color(0xFF192BC2);
 
   // Neutral Shades
   static const Color icon = Color(0xFFFFFFFF);
